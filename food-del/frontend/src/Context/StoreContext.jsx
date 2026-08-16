@@ -5,7 +5,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
 
-    const url = import.meta.env.VITE_API_URL || "http://localhost:4000"
+    const url = import.meta.env.VITE_API_URL || "https://mca-project-backend.onrender.com"
     const [food_list, setFoodList] = useState(defaultFoodList);
     const [cartItems, setCartItems] = useState({});
     const [token, setToken] = useState("")
